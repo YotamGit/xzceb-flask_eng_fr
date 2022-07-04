@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.environ['apikey']
-URL = os.environ['url']
+API_KEY = os.environ['API_KEY']
+URL = os.environ['URL']
+
 VERSION = '2022-07-04'
 
 authenticator = IAMAuthenticator(f'{API_KEY}')
