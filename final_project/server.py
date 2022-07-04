@@ -1,4 +1,4 @@
-from machinetranslation import translator
+from machinetranslation.translator import french_to_english, english_to_french
 from flask import Flask, render_template, request
 import json
 
@@ -18,6 +18,7 @@ def frenchToEnglish():
 
 @app.route("/")
 def renderIndexPage():
+    return render_template("index.html")
     # Write the code to render template
 
 if __name__ == "__main__":
